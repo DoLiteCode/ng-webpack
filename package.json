@@ -1,0 +1,26 @@
+{
+  "name": "ng-webpack",
+  "version": "1.0.0",
+  "description": "Angular4 with Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack app/src/javascript/app.js app/dist/js/main.js",
+    "build:prod": "webpack app/src/javascript/app.js app/dist/js/main.js -p",
+    "start:dev": "webpack-dev-server --port 8000 --content-base ./app --entry ./app/src/javascript/app.js --output-filename ./dist/js/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alternativethoughts/ng-webpack.git"
+  },
+  "author": "Shakil Hossain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alternativethoughts/ng-webpack/issues"
+  },
+  "homepage": "https://github.com/alternativethoughts/ng-webpack#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  }
+}
