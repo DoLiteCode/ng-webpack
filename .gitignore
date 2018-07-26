@@ -5,6 +5,9 @@
 /tmp
 /out-tsc
 /app/build
+/app/dist
+/dist
+/build
 
 # dependencies
 /node_modules
@@ -13,6 +16,7 @@
 
 # IDEs and editors
 /.idea
+/.vscode
 
 # misc
 /.sass-cache
@@ -22,6 +26,7 @@
 npm-debug.log
 testem.log
 /typings
+/bak
 
 # e2e
 /e2e/*.js

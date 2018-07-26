@@ -1,17 +1,17 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  text-align: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  background: url('img/sandbox.png') no-repeat center;
+  display: flex;
+  flex-direction: column;
+  height: "100%";
+  font-family: 'Source Sans Pro', calibri, Arial, sans-serif !important;
+  min-height: 550px;
 }
-
-h1 {
-  font-size: 28px;
-  margin: 20px;
+.content {
+  flex: 1 0 auto;
 }
-
-p {
-  border: 1px solid black;
-  padding: 20px;
-  margin: 30px auto;
-  width: 50%;
-  font-size: 18px;
+footer {
+  padding: 10px 0;
+  text-align: center;
 }

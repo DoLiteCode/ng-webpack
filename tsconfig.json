@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "target": "es5",
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "testing",
+    "node_modules",
+    "ts-api-guardian",
+    "typings-test",
+    "public_api_guard",
+    "docs"
+  ]
+}

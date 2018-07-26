@@ -1,2 +1,2 @@
-# AngularJS: Sample Application
-angularjs, typescript, and webpack
+# Angular: Sample Application
+angular, typescript, and webpack

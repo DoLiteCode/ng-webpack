@@ -1,39 +1,26 @@
 {
   "name": "ng-webpack",
   "version": "1.0.0",
-  "description": "Angular4 with Webpack",
-  "main": "index.js",
+  "description": "Angular 6 with Webpack 4",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -p",
-    "dev": "webpack-dev-server",
-    "ver": "webpack -v"
+    "build:dev": "webpack-cli --mode development",
+    "build:prod": "webpack-cli --mode production",
+    "httpserver": "http-server ./app/ -a 127.0.0.1 -p 9000"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alternativethoughts/ng-webpack.git"
+    "url": "git@sgithub.com:lightsome/ng-webpack.git"
   },
   "author": "Shakil Hossain",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alternativethoughts/ng-webpack/issues"
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
   },
-  "homepage": "https://github.com/alternativethoughts/ng-webpack#readme",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.11",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.1.0",
-    "node-sass": "^4.8.3",
-    "sass-loader": "^6.0.7",
-    "style-loader": "^0.20.3",
-    "uglifyjs-webpack-plugin": "^1.2.4",
-    "webpack": "^4.2.0",
-    "webpack-dev-server": "^3.1.1"
+    "copy-webpack-plugin": "^4.5.2",
+    "typescript": "^2.7.2",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
   }
 }
