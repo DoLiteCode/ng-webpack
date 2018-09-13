@@ -4,8 +4,8 @@
   "description": "Angular 6 with Webpack 4",
   "main": "main.js",
   "scripts": {
-    "build:dev": "webpack-cli --mode development",
-    "build:prod": "webpack-cli --mode production",
+    "build:dev": "webpack --mode development --env.production=local",
+    "build:prod": "webpack-cli --mode production --env.production=global",
     "httpserver": "http-server ./app/ -a 127.0.0.1 -p 9000"
   },
   "repository": {

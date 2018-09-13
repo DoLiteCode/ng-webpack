@@ -3,7 +3,8 @@ const { AngularCompilerPlugin } = require('@ngtools/webpack');
 
 const buildDir = __dirname + "/app/build";
 // console.log(buildDir);
-module.exports = function() {
+module.exports = env = function() {
+  console.log("ENV: ", env.production);
   return {
     entry: "./app/src/main.ts",
     output: {
