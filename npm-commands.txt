@@ -1,0 +1,26 @@
+npm i @angular/animations @angular/common @angular/compiler @angular/compiler-cli @angular/core @angular/forms @angular/http @angular/platform-browser @angular/platform-browser-dynamic @angular/platform-server @angular/common @angular/router @angular/upgrade core-js@2.6.5 rxjs zone.js@0.8.29
+
+npm i -D typescript@3.2.4 webpack webpack-cli webpack-dev-server webpack-merge cross-env
+
+npm i -D clean-webpack-plugin copy-webpack-plugin @ngtools/webpack @types/node @types/core-js
+
+// npm rm angular-router-loader angular2-template-loader awesome-typescript-loader
+
+npm i -D html-loader style-loader css-loader sass-loader @types/core-js http-server
+
+npm i -D uglifyjs-webpack-plugin optimize-css-assets-webpack-plugin cssnano
+
+========================================================================================
+
+npm i @angular/common @angular/compiler @angular/core @angular/platform-browser @angular/platform-browser-dynamic http-server rxjs zone.js
+
+npm i -D @angular/compiler-cli @ngtools/webpack copy-webpack-plugin typescript webpack webpack-cli
+
+
+===============================================================
+
+
+
+npm i -S @angular/common @angular/compiler @angular/core @angular/platform-browser @angular/platform-browser-dynamic http-server rxjs zone.js
+
+npm i -D @angular/compiler-cli @ngtools/webpack clean-webpack-plugin copy-webpack-plugin typescript@3.2.4 webpack webpack-cli
