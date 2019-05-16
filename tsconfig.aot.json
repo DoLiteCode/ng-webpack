@@ -4,19 +4,16 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
-    "inlineSources": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "noImplicitAny": true,
-    "allowJs": true,
-    "noFallthroughCasesInSwitch": true,
+    "suppressImplicitAnyIndexErrors": true,
     "lib": ["es6", "dom"],
-    "skipLibCheck": true,
     "typeRoots": ["node_modules/@types"]
   },
   "exclude": [
     "node_modules",
     "bak",
-    "main.aot.ts"
+    "my-app/src/main.ts"
   ]
 }

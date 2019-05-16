@@ -1,35 +1,51 @@
 {
   "name": "ng-webpack",
   "version": "1.0.0",
-  "description": "Angular 6 with Webpack 4",
-  "main": "main.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "build:dev": "webpack --mode development --env.production=local",
-    "build:prod": "webpack-cli --mode production --env.production=global",
-    "httpserver": "http-server ./app/ -a 127.0.0.1 -p 9000"
+    "build:dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "build:prod": "cross-env NODE_ENV=production webpack-cli",
+    "httpserver": "node static-server.js -d=./my-app -a=127.0.0.1 -p=9000"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@sgithub.com:lightsome/ng-webpack.git"
-  },
-  "author": "Shakil Hossain",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@angular/common": "^6.1.7",
-    "@angular/compiler": "^6.1.7",
-    "@angular/core": "^6.1.7",
-    "@angular/platform-browser": "^6.1.7",
-    "@angular/platform-browser-dynamic": "^6.1.7",
-    "http-server": "^0.11.1",
-    "rxjs": "^6.3.2",
-    "zone.js": "^0.8.26"
-  },
   "devDependencies": {
-    "@angular/compiler-cli": "^6.1.7",
-    "@ngtools/webpack": "^6.2.1",
-    "copy-webpack-plugin": "^4.5.2",
-    "typescript": "^2.7.2",
-    "webpack": "^4.17.1",
-    "webpack-cli": "^3.1.0"
+    "@ngtools/webpack": "^7.3.9",
+    "@types/core-js": "^2.5.0",
+    "@types/node": "^12.0.0",
+    "clean-webpack-plugin": "^2.0.2",
+    "copy-webpack-plugin": "^5.0.3",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "html-loader": "^0.5.5",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "typescript": "~3.2.4",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@angular/animations": "^7.2.15",
+    "@angular/common": "^7.2.15",
+    "@angular/compiler": "^7.2.15",
+    "@angular/compiler-cli": "^7.2.15",
+    "@angular/core": "^7.2.15",
+    "@angular/forms": "^7.2.15",
+    "@angular/http": "^7.2.15",
+    "@angular/platform-browser": "^7.2.15",
+    "@angular/platform-browser-dynamic": "^7.2.15",
+    "@angular/platform-server": "^7.2.15",
+    "@angular/router": "^7.2.15",
+    "@angular/upgrade": "^7.2.15",
+    "core-js": "^3.0.1",
+    "rxjs": "^6.5.2",
+    "zone.js": "~0.8.29"
   }
 }
