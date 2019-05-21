@@ -1,20 +1,6 @@
-<label for="">Server name: </label>
-<input
-  name=""
-  type="text"
-  class="form-control"
-  (input)="onUpdateServerName($event)">
 
-  <input
-  name=""
-  type="text"
-  class="form-control"
-  [(ngModel)]="serverName">
 
-<p>{{serverName}}</p>
-
-<button 
-  class="btn btn-primary" 
-  [disabled]="!activeStatus"
-  (click)="onCreateServer()">Add Server</button>
-<p>{{servercreationStatus}}</p>
+<p
+[ngStyle]="{backgroundColor: getColor()}"
+[ngClass]="{onlineStatus: serverStatus === 'online'}"
+>Server was created! and the Status: {{serverStatus}}</p>
