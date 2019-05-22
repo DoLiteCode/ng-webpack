@@ -6,8 +6,6 @@ import { HttpModule } from "@angular/http";
 import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
-import { ServersComponent } from "./servers/servers.component";
-import { ServerComponent } from "./server/server.component";
 
 
 @NgModule({
@@ -18,9 +16,7 @@ import { ServerComponent } from "./server/server.component";
     FormsModule
   ],
   declarations: [
-    AppComponent,
-    ServersComponent,
-    ServerComponent
+    AppComponent
   ]
 })
 
