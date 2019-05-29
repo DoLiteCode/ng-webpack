@@ -3,7 +3,13 @@
 
 const environment = (process.env.NODE_ENV || 'development').trim();
 
+// testdevelopment
 
+if (environment === 'testdevelopment') {
+  module.exports = require('./config-demo/webpack.config.dev');
+} else if (environment === 'testproduction') {
+  module.exports = require('./config-demo/webpack.config.dev');
+} else
 if (environment === 'development') {
   module.exports = require('./config/webpack.config.dev');
 } else {

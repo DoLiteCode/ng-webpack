@@ -18,7 +18,7 @@
     "node_modules",
     "bak",
     "main.aot.ts",
-    "my-demo",
-    "config-demo"
+    "my-app",
+    "config"
   ]
 }

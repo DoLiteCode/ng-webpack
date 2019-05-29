@@ -6,6 +6,8 @@
   "scripts": {
     "build:dev": "cross-env NODE_ENV=development webpack-dev-server",
     "build:prod": "cross-env NODE_ENV=production webpack-cli",
+    "build:testdev": "cross-env NODE_ENV=testdevelopment webpack-dev-server",
+    "build:testprod": "cross-env NODE_ENV=testproduction webpack-cli",
     "httpserver": "node static-server.js -d=./my-app -a=127.0.0.1 -p=9000"
   },
   "keywords": [],

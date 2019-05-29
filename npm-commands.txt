@@ -10,6 +10,14 @@ npm i -D html-loader style-loader css-loader sass-loader @types/core-js http-ser
 
 npm i -D uglifyjs-webpack-plugin optimize-css-assets-webpack-plugin cssnano
 
+
+
+/********** vs-code settings **********/
+{
+  "javascript.implicitProjectConfig.experimentalDecorators": true
+}
+***********/
+
 ========================================================================================
 
 npm i @angular/common @angular/compiler @angular/core @angular/platform-browser @angular/platform-browser-dynamic http-server rxjs zone.js
