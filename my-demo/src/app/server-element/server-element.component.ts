@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: 'mydemo-server-element',
@@ -7,18 +7,7 @@ import { Component, OnInit } from "@angular/core";
 
 export class ServerElementComponent implements OnInit {
 
-  serverElements:any[] = [
-    {
-      type: 'server',
-      name: 'Test Server 01',
-      content: 'Some test content'
-    },
-    {
-      type: 'serverblueprint',
-      name: 'Test Server 02',
-      content: 'Some another test content'
-    } 
-  ];
+  @Input('serverElement') element: { type: string, name: string, content: string };
 
   ngOnInit() {
     

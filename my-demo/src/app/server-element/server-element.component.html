@@ -1,8 +1,5 @@
-<div class="row">
-  <div class="col-md-12">
-    <div class="card mb-3" *ngFor="let element of serverElements">
+
+    <div class="card mb-3">
       <div class="card-header">{{ element.name }}</div>
       <div class="card-body" [ngClass]="element.type == 'server' ? 'text-primary' : 'text-danger'">{{ element.content }}</div>
     </div>
-  </div>
-</div>

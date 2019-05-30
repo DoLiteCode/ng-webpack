@@ -1,13 +1,17 @@
 <main role="main" class="container px-3 py-3 pt-md-4 pb-md-4 mx-auto">
   <div class="row">
     <div class="col-md-12">
-      <mydemo-cockpit></mydemo-cockpit>
+      <mydemo-cockpit
+      (serverCreated)="onServerAdded($event)"
+      (blueprintCreated)="onBlueprintAdded($event)"></mydemo-cockpit>
     </div>
   </div>
   <hr>
   <div class="row">
     <div class="col-md-12">
-      <mydemo-server-element></mydemo-server-element>
+      <mydemo-server-element 
+      *ngFor="let serverElement of serverElements"
+      [serverElement]="serverElement"></mydemo-server-element>
     </div>
   </div>
 </main>
