@@ -16,6 +16,16 @@ npm i -D uglifyjs-webpack-plugin optimize-css-assets-webpack-plugin cssnano
 {
   "javascript.implicitProjectConfig.experimentalDecorators": true
 }
+
+---------------- git ------------
+$ git remote -v update
+$ git status
+$ git pull
+
+$ git status
+$ git add .
+$ git commit -m ""
+$ git push -u origin master
 ***********/
 
 ========================================================================================
