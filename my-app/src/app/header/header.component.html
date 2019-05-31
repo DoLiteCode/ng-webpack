@@ -35,10 +35,10 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Recipes</a>
+          <a class="nav-link" [ngClass]="(feature == 'recipe') ? 'active' : ''" href="#" (click)="onSelect('recipe')">Recipes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Shopping List</a>
+          <a class="nav-link" [ngClass]="(feature == 'shopping-list') ? 'active' : ''" href="#"(click)="onSelect('shopping-list')">Shopping List</a>
         </li>
         <li class="nav-item dropdown ml-auto">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

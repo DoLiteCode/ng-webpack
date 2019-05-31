@@ -22,22 +22,13 @@
         </span>
       </a>
     </div> -->
-
+    
     <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action  d-flex justify-content-between align-items-center" 
-          *ngFor="let recipe of recipes">
-          <div class="flex-column">
-            <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
-            <p class="list-group-item-text">{{ recipe.description }}</p>
-          </div>
-          <div class="image-parent">
-            <img class="img-fluid" style="max-height: 50px;" 
-              [src]="recipe.imagePath"
-              alt="{{ recipe.name }}">
-          </div>
-        </a>
-      </div>
+      <myapp-recipe-item 
+        *ngFor="let recipe of recipes" 
+        [recepeItem]="recipe"
+        (recipeSelected)="onRecipeSelected(recipe)"></myapp-recipe-item>
+    </div>
 
-    <myapp-recipe-item></myapp-recipe-item>
   </div>
 </div>
