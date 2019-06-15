@@ -1,6 +1,6 @@
-npm i @angular/animations @angular/common @angular/compiler @angular/compiler-cli @angular/core @angular/forms @angular/http @angular/platform-browser @angular/platform-browser-dynamic @angular/platform-server @angular/common @angular/router @angular/upgrade core-js@2.6.5 rxjs zone.js@0.8.29
+npm i @angular/animations @angular/common @angular/compiler @angular/compiler-cli @angular/core @angular/forms @angular/http @angular/platform-browser @angular/platform-browser-dynamic @angular/platform-server @angular/common @angular/router @angular/upgrade core-js@2.6.5 rxjs zone.js@0.9
 
-npm i -D typescript@3.2.4 webpack webpack-cli webpack-dev-server webpack-merge cross-env
+npm i -D typescript@3.4.2 webpack webpack-cli webpack-dev-server webpack-merge cross-env
 
 npm i -D clean-webpack-plugin copy-webpack-plugin @ngtools/webpack @types/node @types/core-js
 

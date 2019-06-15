@@ -1,6 +1,6 @@
 'use strict';
 const { AngularCompilerPlugin } = require('@ngtools/webpack');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const helpers = require('./helpers');
 const isDev = process.env.NOVE_ENV != 'production';
 
