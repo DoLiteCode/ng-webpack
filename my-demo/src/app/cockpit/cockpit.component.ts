@@ -9,7 +9,7 @@ export class CockpitComponent implements OnInit {
   // newServerName: string;
   // newServerContent: string;
 
-  @ViewChild('serverContentInput') serverContentInput: ElementRef; 
+  @ViewChild('serverContentInput', {static: false}) serverContentInput: ElementRef; 
 
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   @Output() blueprintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
@@ -29,6 +29,7 @@ export class CockpitComponent implements OnInit {
       name: this.newServerName,
       content: this.newServerContent
     }); */
+    
 
   }
 
