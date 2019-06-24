@@ -7,6 +7,9 @@ import { Component } from "@angular/core";
 
 export class AppComponent {
 
+  onlyOdd: boolean = false;
+  switchValue:number = 10;
+
   serverElements:any[] = [
     {
       type: 'server',

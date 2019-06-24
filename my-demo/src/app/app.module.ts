@@ -9,6 +9,7 @@ import { ServerElementComponent } from "./server-element/server-element.componen
 import { CockpitComponent } from "./cockpit/cockpit.component";
 import { BasicHighlightDirective } from "./directives/basic-highlight.directive";
 import { BetterHighlightDirective } from "./directives/better-highlight.directive";
+import { UnlessDirective } from "./directives/unless.directive";
 
 
 
@@ -23,7 +24,8 @@ import { BetterHighlightDirective } from "./directives/better-highlight.directiv
     ServerElementComponent,
     CockpitComponent,
     BasicHighlightDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    UnlessDirective
   ]
 })
 
