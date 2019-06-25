@@ -40,11 +40,21 @@
         <li class="nav-item">
           <a class="nav-link" [ngClass]="(feature == 'shopping-list') ? 'active' : ''" href="#"(click)="onSelect('shopping-list')">Shopping List</a>
         </li>
-        <li class="nav-item dropdown ml-auto">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown ml-auto" myappDropdown>
+          <!--
+            <a class="nav-link dropdown-toggle-1n" href="#" id="navbarDropdownMenuLink-1n" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Dropdown link
           </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+          <div class="dropdown-menu-1n dropdown-menu-right-1n" aria-labelledby="navbarDropdownMenuLink-1n">
+            <a class="dropdown-item-1n" href="#">Action</a>
+            <a class="dropdown-item-1n" href="#">Another action</a>
+            <a class="dropdown-item-1n" href="#">Something else here</a>
+          </div>
+          -->
+          <a class="nav-link dropdown-toggle" href="#">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <a class="dropdown-item" href="#">Something else here</a>
