@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Demo Applet</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav w-100">
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="(navItem == 'server-blueprint') ? 'active' : ''" href="#" (click)="onSelect('server-blueprint')">Server and Blueprint</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="(navItem == 'manage-accounts') ? 'active' : ''" href="#"(click)="onSelect('manage-accounts')">Manage Accounts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [ngClass]="(navItem == 'directive-test') ? 'active' : ''" href="#"(click)="onSelect('directive-test')">Directive Test</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-12">
+      <p class="h3 text-danger">Sample Directives</p>
+    <button (click)="onlyOdd= !onlyOdd">Toggle</button>
+    <p myappBasicHighlight>This is basic directive</p>
+    <p myappBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">This is better directive</p>
+
+    <p>Only odd: "{{onlyOdd}}"</p>
+    <p *myappUnless="!onlyOdd">
+      odd template
+    </p>
+
+    <div [ngSwitch]="switchValue">
+      <p *ngSwitchCase="5">5</p>
+      <p *ngSwitchCase="10">10</p>
+      <p *ngSwitchCase="15">15</p>
+      <p *ngSwitchCase="20">20</p>
+    </div>
+  </div>
+</div>
