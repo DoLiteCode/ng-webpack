@@ -1,4 +1,5 @@
-import { Component, Input, Output, EventEmitter } from "@angular/core";
+import { Component, Input } from "@angular/core";
+import { AccountService } from "../../shared/services/account.service";
 
 @Component({
   selector: 'mydemo-account',
@@ -8,15 +9,14 @@ export class AccountComponent {
   @Input() account: {name: '', status: ''};
   @Input() id: number;
 
-  @Output() statusChanged = new EventEmitter<{ id: number, newStatus: string}>();
-  
-  constructor() {
-    console.log("accpount component");
+  constructor(private accService: AccountService) {
+    //console.log("accpount component");
   }
 
   onSetTo(status: string) {
-    this.statusChanged.emit({ id: this.id, newStatus: status });
-    console.log(`A service status changed, new status: ${status}`);
+    this.accService.onStatusChanged({ id: this.id, newStatus: status });
+    //console.log(`A service status changed, new status: ${status}`);
+    this.accService.statusUpdated.emit(status);
   }
 
 }
