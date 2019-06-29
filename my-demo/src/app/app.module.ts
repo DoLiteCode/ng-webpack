@@ -1,8 +1,12 @@
 import { NgModule } from "@angular/core";
 // import { CommonModule } from "@angular/common";
+import {APP_BASE_HREF} from '@angular/common';
+
 import { BrowserModule } from "@angular/platform-browser";
 
+
 import { FormsModule } from "@angular/forms";
+import { Routes, RouterModule } from "@angular/router";
 
 import { AppComponent } from "./app.component";
 import { ServerElementComponent } from "./server-blueprint/server-element/server-element.component";
@@ -17,6 +21,16 @@ import { ServerBlueprintComponent } from "./server-blueprint/server-blueprint.co
 import { AccountComponent } from "./accounts/account/account.component";
 import { NewAccountComponent } from "./accounts/new-account/new-account.component";
 import { LoggingService } from "./shared/services/logging.service";
+import { ServerManagerComponent } from "./server-manager/server-manager.component";
+import { HomeComponent } from "./home/home.component";
+
+const myappRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'server-blueprint', component: ServerBlueprintComponent },
+  { path: 'directive-test', component: SampleDirectivesComponent },
+  { path: 'manage-accounts', component: AccountsComponent },
+  { path: 'server-manager', component: ServerManagerComponent }
+];
 
 
 
@@ -24,7 +38,8 @@ import { LoggingService } from "./shared/services/logging.service";
   bootstrap: [AppComponent],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(myappRoutes, {enableTracing: false})
   ],
   declarations: [
     AppComponent,
@@ -38,13 +53,20 @@ import { LoggingService } from "./shared/services/logging.service";
     SampleDirectivesComponent,
     ServerBlueprintComponent,
     AccountComponent,
-    NewAccountComponent
+    NewAccountComponent,
+    ServerManagerComponent,
+    HomeComponent
   ],
   providers: [
-    LoggingService
+    LoggingService,
+    {provide: APP_BASE_HREF, useValue: '/'}
   ]
 })
 
 export class AppModule {
+
+  constructor() {
+    console.log('www start server');
+  }
 
 }

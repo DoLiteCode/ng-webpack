@@ -6,12 +6,21 @@
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Welcome Demo</title>
+  
   <link rel="stylesheet" href="resources/css/bootstrap.min.css">
  <!--  <script type="text/javascript" src="resources/js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="resources/js/jquery-migrate-1.4.1.min.js"></script>
   <script type="text/javascript" src="resources/js/jquery-migrate-3.0.1.min.js"></script>
   <script type="text/javascript" src="resources/js/bootstrap.bundle.min.js"></script>  -->
-  <script type="text/javascript" src="build/main.bundle.js"></script>
+  <!-- <script type="text/javascript" src="build/main.bundle.js"></script> -->
+
+  <script>
+    //document.write('<script type="text/javascript" src="build/main.bundle.js?t="'+ ((new Date()).getMilliseconds()) +'"><\/script>');
+    
+    var _imported = document.createElement("script");
+    _imported.src = "build/main.bundle.js?t=" + ((new Date()).getMilliseconds());
+    document.getElementsByTagName("head")[0].appendChild(_imported);
+  </script>
 
 
   <!-- <script src="build/0ee0519c9f8952042b96.js"></script>

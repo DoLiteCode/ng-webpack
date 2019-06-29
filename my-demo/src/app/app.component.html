@@ -1,8 +1,14 @@
 <mydemo-header (navItemSelected)="onNavigate($event)"></mydemo-header> 
 <main role="main" class="container px-3 py-3 pt-md-4 pb-md-4 mx-auto">
   
-  <mydemo-serverblueprint *ngIf="navSelected=='server-blueprint'"></mydemo-serverblueprint>
+  <!-- <mydemo-serverblueprint *ngIf="navSelected=='server-blueprint'"></mydemo-serverblueprint>
   <mydemo-sampledirectives *ngIf="navSelected=='directive-test'"></mydemo-sampledirectives>
   <mydemo-accounts *ngIf="navSelected=='manage-accounts'"></mydemo-accounts>
+  <mydemo-servermanager *ngIf="navSelected=='server-manager'"></mydemo-servermanager> -->
+
+  <router-outlet></router-outlet>
+
+  <!-- <mydemo-serverblueprint></mydemo-serverblueprint> -->
+  
 
 </main>

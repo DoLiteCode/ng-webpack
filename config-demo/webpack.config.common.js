@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const helpers = require('./helpers');
 const isDev = process.env.NOVE_ENV != 'production';
 
+
 const path = require('path');
 const appDir = helpers.root('my-demo');
 const srcDir = path.join(appDir, 'src');
@@ -79,7 +80,11 @@ if (isDev) {
     contentBase: appDir,
     publicPath: buildPath,
     compress: true,
-    port: 9000
+    port: 9000,
+    watchOptions: {
+      poll: true
+    },
+    writeToDisk: false
   };
 }
 
